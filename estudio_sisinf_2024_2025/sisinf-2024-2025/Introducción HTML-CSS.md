@@ -70,3 +70,4 @@
 * No puedes usar el mismo valor de atributo id en más de un elemento dentro de un mismo documento HTML. El atributo id debe ser único, ya que se utiliza para identificar de manera exclusiva un elemento en el DOM (Document Object Model).
 
 
+* Mucha explicación de código ¿Entrará eso al examen?
