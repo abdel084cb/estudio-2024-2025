@@ -35,7 +35,7 @@
 ![[Pasted image 20241228230225.png]]
 ![[Pasted image 20241228230236.png]]
 ### **Generalizaciones del Mútex distribuido**
-#### Algoritmo de Raymond
+#### Algoritmo de Raymond (Generalización de Agrawala)
 * SD con N procesos
 * K procesos en SC, K < N
 * Un proceso puede entrar en SC cuando reciba N-K ACKs

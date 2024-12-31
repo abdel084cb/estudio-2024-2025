@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "ab1c2beb8ac48f34",
+    "type": "split",
+    "children": [
+      {
+        "id": "e7984416e8305bba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b8f0c1af8459cf4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introducción a los Sistemas de información.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introducción a los Sistemas de información"
+            }
+          },
+          {
+            "id": "eab19d5fcd97aa3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Evolución de la Web.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Evolución de la Web"
+            }
+          },
+          {
+            "id": "a379418283e411b4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Introducción HTML-CSS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introducción HTML-CSS"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "232fce392150bc42",
+    "type": "split",
+    "children": [
+      {
+        "id": "f6a39fdc34589f10",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5fd76d8dda5b9b90",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "198a3bad5a7c692f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "140eb8338052be88",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7e8f27952340987c",
+    "type": "split",
+    "children": [
+      {
+        "id": "27860270d191f516",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9db6aa80f9105645",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Evolución de la Web.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Evolución de la Web"
+            }
+          },
+          {
+            "id": "689c928880d09352",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Evolución de la Web.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Evolución de la Web"
+            }
+          },
+          {
+            "id": "492b5b75018e153e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "de8486085f4cdbeb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Evolución de la Web.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Evolución de la Web"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "a379418283e411b4",
+  "lastOpenFiles": [
+    "fotos/Pasted image 20241231002022.png",
+    "fotos/Pasted image 20241231012554.png",
+    "fotos/Pasted image 20241231012702.png",
+    "fotos/Pasted image 20241230213223.png",
+    "fotos/Pasted image 20241231012717.png",
+    "Introducción HTML-CSS.md",
+    "Pasted image 20241231013329.png",
+    "Pasted image 20241231013307.png",
+    "Evolución de la Web.md",
+    "fotos/Pasted image 20241231001258.png",
+    "fotos/Pasted image 20241231000432.png",
+    "fotos/Pasted image 20241231000420.png",
+    "fotos/Pasted image 20241231000408.png",
+    "Introducción a los Sistemas de información.md",
+    "fotos"
+  ]
+}
