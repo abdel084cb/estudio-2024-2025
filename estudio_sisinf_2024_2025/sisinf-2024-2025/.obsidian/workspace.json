@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c5c24b8b26898c72",
+            "id": "5b07e7282d49a273",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "fotos/Pasted image 20250101004928.png"
+                "file": "Sistemas legados.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20250101004928"
+              "icon": "lucide-file",
+              "title": "Sistemas legados"
             }
           }
         ]
@@ -160,29 +162,32 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c5c24b8b26898c72",
+  "active": "5b07e7282d49a273",
   "lastOpenFiles": [
-    "Introducción a las BD distribuidas.md",
-    "fotos/Pasted image 20250101004928.png",
-    "Introducción a los Sistemas de información.md",
-    "Evolución de la Web.md",
-    "Introducción RDFa.md",
-    "fotos/Pasted image 20250101004429.png",
-    "fotos/Pasted image 20250101003726.png",
-    "fotos/Pasted image 20250101001020.png",
-    "fotos/Pasted image 20241231235747.png",
-    "fotos/Pasted image 20241231235715.png",
-    "fotos/Pasted image 20241231235645.png",
-    "fotos/Pasted image 20241231235446.png",
-    "Untitled.md",
-    "Information Retrieval.md",
-    "fotos/Pasted image 20241231232300.png",
-    "fotos/Pasted image 20241231232003.png",
-    "Introducción a RDF y SPARQL.md",
-    "Untitled",
+    "fotos/Pasted image 20250101045335.png",
+    "MAGERIT.md",
+    "fotos/Pasted image 20250101052801.png",
+    "fotos/Pasted image 20250101052831.png",
+    "fotos/Pasted image 20250101052832.png",
+    "fotos/Pasted image 20250101052908.png",
+    "Pasted image 20250101053120.png",
+    "Pasted image 20250101053009.png",
+    "Sistemas legados.md",
+    "Minería de datos y texto.md",
+    "fotos/Pasted image 20250101041646.png",
+    "fotos/Pasted image 20250101041029.png",
+    "fotos/Pasted image 20250101040657.png",
+    "Almacenes de datos.md",
+    "RDF y SPARQL.md",
     "Servlets y JSP.md",
+    "BD distribuidas.md",
+    "Introducción a los Sistemas de información.md",
+    "RDFa.md",
+    "HTML-CSS.md",
+    "Evolución de la Web.md",
+    "Information Retrieval.md",
+    "Untitled",
     "A tener en cuenta.md",
-    "Introducción HTML-CSS.md",
     "fotos"
   ]
 }
