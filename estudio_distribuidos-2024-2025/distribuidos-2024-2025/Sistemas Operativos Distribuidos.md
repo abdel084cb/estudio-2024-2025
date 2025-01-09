@@ -153,7 +153,7 @@
 	- Job 
 		- Crea uno o más Pods y asegura que un número determinado de ellos termine con éxito. El trabajo se considera completado correctamente una vez que los Pods finalizan exitosamente. Rearranca Pods si fallan o se eliminan.
 	- Daemon Set 
-		- Garantiza que todos (o algunos) nodos ejecuten una copia de un Pod. Rearranca Pods si fallan o se eliminan. 
+		- Garantiza que todos (o algunos) nodos ejecuten una copia de un Pod. Re arranca Pods si fallan o se eliminan. 
 	- Replica Set 
 		- Garantiza que un número específico de réplicas esté siempre en ejecución.
 	* Deployment
