@@ -208,6 +208,6 @@ Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo 
 - **Namespaces**
 	- Los **namespaces** en Kubernetes son divisiones lógicas dentro del clúster que permiten organizar y aislar recursos (como Pods, servicios y configuraciones). Son útiles para separar entornos (producción, desarrollo, pruebas) o para gestionar múltiples equipos o proyectos dentro del mismo clúster, evitando conflictos entre nombres de recursos
 - **Labels**
+	- Los **labels** son pares clave-valor que se asignan a los recursos de Kubernetes (Pods, servicios, etc.) para clasificarlos y organizarlos. Permiten realizar selecciones y filtrados eficientes, facilitando la gestión de recursos agrupados según sus características, como roles, entornos o versiones.
 
-
-* Falta lo de scheduling...
+* Falta scheduling ¿Importante?
