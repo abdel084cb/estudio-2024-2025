@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EXAMEN/27 - enero - 2023.md",
+                "file": "EXAMEN/Examen - IMPORTANTE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "27 - enero - 2023"
+              "title": "Examen - IMPORTANTE"
             }
           }
         ]
@@ -164,31 +164,31 @@
   },
   "active": "45339f940dc57266",
   "lastOpenFiles": [
+    "fotos/Pasted image 20250111211258.png",
     "EXAMEN/Examen - IMPORTANTE.md",
+    "fotos/Pasted image 20250111211101.png",
+    "fotos/Pasted image 20250111211050.png",
+    "fotos/Pasted image 20250111203032.png",
+    "fotos/Pasted image 20250111203016.png",
+    "fotos/Pasted image 20250111200115.png",
     "EXAMEN/27 - enero - 2023.md",
-    "fotos/Pasted image 20250111004818.png",
-    "Algoritmos de exclusión mutua distribuida.md",
-    "Arquitecturas de Sistemas Distribuidos.md",
+    "RPC.md",
+    "Comunicación en grupo.md",
     "Consistencia y transacciones distribuidas.md",
     "Middleware.md",
-    "RPC.md",
-    "fotos/Pasted image 20250111003013.png",
-    "fotos/Pasted image 20250111003010.png",
+    "fotos/Pasted image 20250111194737.png",
+    "Pasted image 20250111194736.png",
+    "Pasted image 20250111194735.png",
+    "Algoritmos de exclusión mutua distribuida.md",
+    "fotos/Pasted image 20250111192038.png",
     "Sistemas Operativos Distribuidos.md",
     "Seguridad en Sistemas Distribuidos.md",
-    "Comunicación en grupo.md",
     "Relojes vectoriales.md",
-    "Redes de comunicación.md",
     "Relojes escalares.md",
-    "fotos/Pasted image 20250111002843.png",
-    "fotos/Pasted image 20250111002606.png",
-    "fotos/Pasted image 20250111002217.png",
-    "fotos/Pasted image 20250111002202.png",
-    "fotos/Pasted image 20250111002133.png",
-    "fotos/Pasted image 20250111002114.png",
-    "fotos/Pasted image 20250110231802.png",
-    "EXAMEN",
+    "Redes de comunicación.md",
+    "Arquitecturas de Sistemas Distribuidos.md",
     "Tolerancia a fallos.md",
+    "EXAMEN",
     "Tolerancia a fallos con estado - Raft.md",
     "Introducción.md",
     "fotos"
