@@ -148,7 +148,7 @@ Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo 
 * **Servicio**
 	* Expone un nombre, un puerto y una IP estable para un grupo de Pods. Un **servicio** en Kubernetes actúa como un **alias estable** para un conjunto de pods. Si un pod encargado de una tarea tiene una IP específica y luego muere o se reinicia con otra IP diferente, el servicio sigue proporcionando la misma **IP fija** (o nombre DNS) para acceder a esos pods. Se provee a los Pods mediante DNS o una variable de entorno.
 	* Un servicio te da una **dirección fija** para acceder a tus pods.
-	* Construido utilizando un selector sobre los labels de Pods
+	* **Construido utilizando un selector sobre los labels de Pods**
 	- Balancea la carga entre un grupo de Pods, redistribuye automáticamente el tráfico entre los pods.
 	- Puede ser solo interno (dentro del clúster) o externo (visible fuera del clúster).
 		- los **servicios internos** (ClusterIP) son los más comunes, mientras que los servicios externos (NodePort o LoadBalancer) son más específicos para exponer aplicaciones al mundo exterior.
