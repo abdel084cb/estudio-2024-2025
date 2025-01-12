@@ -209,5 +209,124 @@ Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo 
 	- Los **namespaces** en Kubernetes son divisiones lógicas dentro del clúster que permiten organizar y aislar recursos (como Pods, servicios y configuraciones). Son útiles para separar entornos (producción, desarrollo, pruebas) o para gestionar múltiples equipos o proyectos dentro del mismo clúster, evitando conflictos entre nombres de recursos
 - **Labels**
 	- Los **labels** son pares clave-valor que se asignan a los recursos de Kubernetes (Pods, servicios, etc.) para clasificarlos y organizarlos. Permiten realizar selecciones y filtrados eficientes, facilitando la gestión de recursos agrupados según sus características, como roles, entornos o versiones.
+### Certificados digitales
+- **Autenticación y seguridad:**
+    - Los certificados digitales son documentos electrónicos utilizados para garantizar la identidad de una persona, empresa o entidad en la red.
+    - Permiten verificar que una entidad es quien dice ser y establecen un canal seguro para intercambiar información.
+- **Criptografía asimétrica:**
+    - Usa dos claves:
+        - **Clave pública:** Compartida con cualquiera y contenida en el certificado.
+        - **Clave privada:** Guardada de forma segura y nunca compartida.
+    - Estas claves permiten cifrar y firmar mensajes de manera segura.
+- **Contenido del certificado:**
+    - Incluye información como:
+        - **Clave pública** del titular (persona/empresa).
+        - **Datos básicos** del titular (nombre, dirección, fecha de caducidad).
+        - Una **firma digital** de una entidad certificadora (CA), que verifica la autenticidad del certificado.
+- **Firma digital:**
+    - Generada por una entidad certificadora confiable, que actúa como un "notario digital".
+    - Garantiza que el certificado no ha sido alterado y es válido.
+- **Técnica básica de autentificación del certificado**
+	- Una firma digital es una manera de garantizar que los datos no han sido alterados y que provienen de una entidad confiable (en este caso, la CA o Autoridad Certificadora)
+	- `firma_digital = cifrar( Hash(datos-certificado), Kpriv-CA)`
+	- Para validar un certificado digital:
+		- `A = Descrifrar(firma_digital, Kpub-CA)
+		- `B = CalcularHash(datos-certificado)`
+		- `A==B` Valida el certificado
+	- `CA y Kpriv-CA comprometidas => anular certificados`
+		- Todos los certificados firmados por esa CA se vuelven inseguros. Se podrían falsificar.
+* Tienen **tiempo de vida limitado** para disminuir riesgos de capturas de la clave privada asociada
+* Un certificado digital puede ser **revocado** por la Autoridad Certificadora (CA) antes de su fecha de expiración. Esto ocurre cuando se detecta algún problema de seguridad
+	* Los sistemas que confían en certificados (por ejemplo, navegadores web) deben consultar periódicamente las CRLs para asegurarse de que los certificados que están validando no han sido revocados.
+	* **Lista de Revocación de Certificados (CRL)**: Es un archivo generado y mantenido por la CA que contiene un listado de los certificados que han sido revocados y, por lo tanto, ya no son válidos.
+### Distribución de claves públicas
+* Kerberos almacena y distribuye claves secretas (las de sesión)
+* **PKI (infraestructura de clave pública) para la distribución**
+	* Vincula Kpub con identidades mediante certificados digitales: certificados digitales garantizan que una Kpub pertenece realmente a una persona o a una entidad.
+	* Cada uno guarda su Kpriv
+* **Modelos de PKIs:**
+	- **Centros de distribución o Autoridades Certificadoras (CA):** Organismos que emiten y garantizan la validez de los certificados digitales.
+	- **Venta de certificados:** Generalmente, las CAs venden estos certificados para validar identidades (ejemplo: empresas compran certificados SSL).
+	- **Cadenas de confianza:** Esquema en el cual una autoridad certificadora de confianza respalda a otras entidades para garantizar la autenticidad de los certificados
+		- Si una entidad A confía en una CA y esta CA certifica a una entidad B, entonces A puede confiar en B. Esto es lo que crea la "cadena".
+		- ![[Pasted image 20250112012059.png]]
+		- ![[Pasted image 20250112012546.png]]
 
-* Falta scheduling ¿Importante?
+### Protocolo SSL/TLS
+
+### Kerberos
+
+**Definición:** Kerberos es un protocolo de autenticación diseñado para sistemas distribuidos que permite a usuarios y servicios autenticarse de manera segura en una red, minimizando riesgos de ataques como la interceptación de contraseñas o la reinyección de datos (replay attacks).
+
+ **Características Principales:**
+1. **Autenticación centralizada:**
+    - Los usuarios y servicios se autentican a través de un servidor central llamado **Centro de Distribución de Claves (KDC)**.
+2. **Single Sign-On (SSO):**
+    - Los usuarios solo necesitan autenticarse una vez por sesión para acceder a múltiples servicios en la red.
+3. **Uso de cifrado simétrico:**
+    - Diseñado originalmente en los años 1980 para reducir el coste computacional de los algoritmos de cifrado.
+4. **Tickets de autenticación:**
+    - Kerberos utiliza tickets no falsificables para autenticar a usuarios y servicios.
+5. **Confianza en una tercera entidad:**
+    - El KDC almacena y gestiona claves secretas duraderas asociadas a cada usuario o servicio.
+6. **Resistencia a ataques de reinyección:**
+    - Los tickets incluyen información de tiempo de creación y tiempo de vida limitado.
+
+ **Componentes de Kerberos:**
+1. **Key Distribution Center (KDC):**
+    - Entidad central que gestiona las claves y tickets. Incluye:
+        - **Authentication Server (AS):** Valida la identidad inicial del usuario.
+        - **Ticket Granting Server (TGS):** Emite tickets de servicio (TS) basados en los tickets de autenticación.
+2. **Tickets:**
+    - **Ticket Granting Ticket (TGT):** Ticket inicial que permite solicitar otros tickets sin necesidad de volver a ingresar credenciales.
+    - **Ticket de Servicio (TS):** Ticket específico para acceder a un servicio.
+3. **Claves:**
+    - Clave secreta duradera: Conocida solo por el KDC y el usuario/servicio.
+    - Clave de sesión: Generada para una sesión específica, incluida en los tickets.
+
+ **Funcionamiento del Protocolo:**
+1. **Autenticación inicial:**
+    - El usuario envía sus credenciales (clave maestra) cifradas al AS (servidor de autenticación del KDC).
+    - El AS verifica las credenciales y devuelve un **TGT** cifrado con la clave secreta del usuario.
+2. **Solicitar acceso a un servicio:**
+    - El usuario utiliza el TGT para solicitar un ticket de servicio (TS) al TGS.
+    - El TGS genera el TS y lo envía al usuario.
+3. **Acceso al servicio:**
+    - El usuario presenta el TS al servicio deseado.
+    - El servicio verifica el ticket y establece la sesión.
+
+ **Ventajas de Kerberos:**
+- **Seguridad:**
+    - Contraseñas nunca viajan en texto claro por la red.
+    - Los tickets tienen una vida limitada para evitar abusos.
+- **Eficiencia:**
+    - Uso de cifrado simétrico para reducir la carga computacional.
+- **Flexibilidad:**
+    - Compatible con múltiples sistemas operativos (Unix, Windows, etc.).
+- **Single Sign-On:**
+    - Simplifica la autenticación en sistemas distribuidos.
+
+ **Limitaciones:**
+1. **Dependencia del KDC:**
+    - Si el KDC falla, la autenticación en toda la red se ve afectada.
+2. **Complejidad de implementación:**
+    - La gestión de claves y tickets requiere una configuración cuidadosa.
+3. **Cifrado simétrico:**
+    - Aunque es eficiente, implica compartir claves secretas, lo cual puede ser un riesgo si no se protege adecuadamente.
+
+### Consistencia
+
+* **Replicación como técnica de escalabilidad**
+	* Replicación puede mejorar las prestaciones
+	* Mantener la consistencia puede suponer un coste enorme `=>` Relajar la consistencia
+		* **Consistencia secuencial
+			* ![[Pasted image 20250109222832.png]]
+			* Lo importante es que **todos los procesos ven las mismas operaciones en el mismo orden**:
+			- En el primer caso, el orden observado por **P3** y **P4** es: `b` primero, luego `a`.
+			- Aunque el orden real de escritura sea diferente, **este orden es consistente para todos los procesos**
+			- ¿Segundo caso no válido?
+		* **Consistencia casual
+			* ![[Pasted image 20250109223749.png]]
+		* **Consistencia eventual
+			* ![[Pasted image 20250109224401.png]]
+		* ![[Pasted image 20250112015857.png]]

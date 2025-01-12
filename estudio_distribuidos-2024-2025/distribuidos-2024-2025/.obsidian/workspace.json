@@ -13,15 +13,44 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "EXAMEN/27 - enero - 2023.md",
+                "file": "EXAMEN/Examen - IMPORTANTE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "27 - enero - 2023"
+              "title": "Examen - IMPORTANTE"
+            }
+          },
+          {
+            "id": "5d28de4eafd2e5dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Consistencia y transacciones distribuidas.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Consistencia y transacciones distribuidas"
+            }
+          },
+          {
+            "id": "2533a8a227c32e94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "EXAMEN/26 - junio- 2023.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "26 - junio- 2023"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -162,27 +191,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45339f940dc57266",
+  "active": "feb521e365899a1c",
   "lastOpenFiles": [
+    "fotos/Pasted image 20250112023151.png",
+    "Consistencia y transacciones distribuidas.md",
     "EXAMEN/Examen - IMPORTANTE.md",
+    "EXAMEN/26 - junio- 2023.md",
+    "fotos/Pasted image 20250112022440.png",
+    "fotos/Pasted image 20250112022426.png",
     "EXAMEN/27 - enero - 2023.md",
+    "fotos/Pasted image 20250112015857.png",
+    "fotos/Pasted image 20250112012546.png",
+    "fotos/Pasted image 20250112012059.png",
+    "Seguridad en Sistemas Distribuidos.md",
     "fotos/Pasted image 20250111211258.png",
     "fotos/Pasted image 20250111211101.png",
     "fotos/Pasted image 20250111211050.png",
     "fotos/Pasted image 20250111203032.png",
     "fotos/Pasted image 20250111203016.png",
-    "fotos/Pasted image 20250111200115.png",
     "RPC.md",
     "Comunicación en grupo.md",
-    "Consistencia y transacciones distribuidas.md",
     "Middleware.md",
-    "fotos/Pasted image 20250111194737.png",
-    "Pasted image 20250111194736.png",
-    "Pasted image 20250111194735.png",
     "Algoritmos de exclusión mutua distribuida.md",
-    "fotos/Pasted image 20250111192038.png",
     "Sistemas Operativos Distribuidos.md",
-    "Seguridad en Sistemas Distribuidos.md",
     "Relojes vectoriales.md",
     "Relojes escalares.md",
     "Redes de comunicación.md",
