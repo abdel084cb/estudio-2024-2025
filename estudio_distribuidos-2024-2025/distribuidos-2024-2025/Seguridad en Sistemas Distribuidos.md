@@ -59,6 +59,11 @@
  * ![[Pasted image 20250110180945.png]]
  * **Transport Layer Security**
 	 * **TLS (Transport Layer Security)** es un protocolo criptográfico diseñado para proporcionar **seguridad** en las comunicaciones a través de redes, como Internet. Es el sucesor de **SSL (Secure Sockets Layer)** y mejora sus características para garantizar **confidencialidad**, **integridad** y **autenticación** en las conexiones.
+	 * **Verdadero.** TLS utiliza criptografía asimétrica durante el proceso de handshake para intercambiar o negociar una clave simétrica.
+	- Durante el **handshake** de TLS, los participantes (cliente y servidor) intercambian información de manera segura utilizando criptografía asimétrica (claves públicas y privadas).
+	- Una vez establecido el canal seguro, acuerdan una clave simétrica compartida que será utilizada para cifrar los datos durante la sesión.
+	- Esto es más eficiente porque la criptografía simétrica es mucho más rápida que la asimétrica para el cifrado de grandes cantidades de datos.
+	- Este intercambio de claves simétricas garantiza la **confidencialidad**, **integridad** y **eficiencia** de la comunicación posterior.
 	 * ![[Pasted image 20250110182104.png]]
 	 * ![[Pasted image 20250110182148.png]]
 	 * ![[Pasted image 20250110182212.png]]

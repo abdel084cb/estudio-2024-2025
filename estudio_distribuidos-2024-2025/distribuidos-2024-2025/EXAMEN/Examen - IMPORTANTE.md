@@ -22,6 +22,86 @@ Si es necesario distinguir eventos concurrentes, los **relojes vectoriales** son
 ![[Pasted image 20250110224540.png]]
 ![[Pasted image 20250110224808.png]]
 
+### Algoritmo de Elección en Anillo
+
+* **3 mensajes**
+	* Elección
+		* Reenviar datos elección
+	* Coordinador
+		* Anuncio del coordinador elegido
+	* Latido
+		* Para determinar si el coordinador funciona
+* **Algoritmo**
+	* Pi empieza elección cuando timeout mediante latido
+	* Pi envía (Elección, ID) al primer vecino vivo
+	* Cuando Pj recibe mensaje => Compara su id con el recibido en el mensaje (Elección, ID)
+		* Si IDpj > ID => lo reemplaza y (Elección, IDpj)
+		* Si IDpj < ID => (Elección, IDpj)
+		* Si IDpj == ID => Pj se convierte en líder y (Coordinador)
+* **Aclaraciones**
+	* Cada proceso conoce su posición en el anillo (ordenación por PID)
+	* Cada proceso conoce al resto
+		* Es mas sencillo reconectar el anillo si procesos fallan
+	* Si Pi inicia elección no puede iniciar otra hasta recibir Coordinador
+	* Mejor caso
+		* 2N RTT
+		* 2N mensajes
+	* Peor caso
+		* 2N RTT
+		* 2N mensajes
+### Algoritmo del matón
+
+* **Características:**
+	* Cada proceso conoce el PID de los demás procesos, sabe cuales son mayores
+	* Interacción síncrona gestionada por timeouts
+	* Red sin fallos
+	* Inicia elección si el líder no responde
+	* Procesos con mayor PID intimidan a los de menor para expulsarlos de la elección quedando al final un único proceso.
+	* Cuando un proceso fallido re-arranca, inicia una elección automáticamente
+
+* **Algoritmo:**
+	* 4 tipos de msg:
+		* Elección: anuncia elección
+		* Respuesta: respuesta a elección
+		* Coordinador: anuncia líder elegido
+		* Latido: msg que se envía al coordinador, si contesta está vivo
+	* Proceso empieza elección cuando:
+		* ha expirado el timeout, es decir, el coordinador no responde
+		* recibe Elección
+			* Contesta si tiene el PID mayor (que lo tendrá, mas bien sería si sigue vivo) y vuelve a lanzar Elección a todos los procesos mayores.
+			* Si ya estaba en elección contesta si procede pero no vuelve a lanzar Elección.
+	* Proceso empieza elección
+		* Envía Elección a todos los procesos con PID mas alto
+		* Si no se recibe Respuesta se convierte en líder y manda el msg Coordinador a todos los procesos vivos
+		* Si llega Respuesta, entonces espera Coordinador durante un tiempo (timeout)
+		* Si no llega el msg Coordinador entonces reinicia la Elección
+		* Si un proceso sabe que su PID es el mas alto entonces puede responder inmediatamente con Coordinador
+		* Se deben ajustar los tiempos de expiración
+			* `(2*RTT + Tprocesado)`
+		* Si hay error durante la detección de fallo, la elección seguirá adelante.
+![[Pasted image 20250111165642.png]]
+![[Pasted image 20250111165709.png]]
+
+- **RTT** significa **Round-Trip Time** o tiempo de ida y vuelta. Es el tiempo que tarda un mensaje en viajar desde un emisor hasta un receptor y que la respuesta de ese receptor vuelva al emisor.
+
+- **Mejor caso (1 RTT, N-1 mensajes)**:
+    - Ocurre cuando el proceso con **mayor PID detecta directamente la falla** del líder.
+    - Este proceso se autoproclama líder y envía un único mensaje de **Coordinador** a los demás procesos.
+- **Peor caso (N-1 RTTs, O(N²) mensajes)**:
+    - Sucede si el proceso con **menor PID inicia la elección**.
+    - Este proceso debe enviar mensajes de **Elección** a procesos con mayor PID, quienes a su vez continúan propagando la elección hasta llegar al proceso con el mayor PID. Luego, este último envía mensajes de **Coordinador** a todos los demás
+    - ![[Pasted image 20250112164952.png]]
+
+![[Pasted image 20250111175052.png]]
+
+- **Timeout para detectar la falla del líder**:
+    - Cada proceso monitorea al líder actual enviándole mensajes periódicos de "latido" (heartbeat) y espera su respuesta.
+    - Si el proceso no recibe respuesta dentro de un tiempo definido, el timeout expira y el proceso asume que el líder ha fallado, iniciando una elección.
+- **Timeout para esperar respuestas durante la elección**:
+    - Cuando un proceso inicia una elección, envía mensajes de Elección a los procesos con mayor PID y espera respuestas (mensajes de Respuesta o Coordinador).
+    - Si no recibe ninguna respuesta dentro del tiempo definido, el proceso asume que los procesos con mayor PID han fallado y se declara líder enviando un mensaje de Coordinador a todos los procesos vivos.
+- Se ajustan con `2*RTT + Tprocesado`
+
 ### Ricart-Agrawala
 
 ![[Pasted image 20250111002606.png]]
@@ -75,61 +155,33 @@ Estos son los procesos que gestionan los mensajes recibidos:
 
 Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo utilizamos el reloj para los mutex.
 
+**Ausencia de Bloqueos (Deadlocks):** No ocurren bloqueos cíclicos porque las solicitudes se responden estrictamente en orden de prioridad basado en las marcas de tiempo. Cada proceso garantiza el envío de un REPLY tan pronto como no está en la SC o tras finalizar su acceso.
 
-### Algoritmo del matón
+**Ausencia de Inanición (Starvation):** No se produce inanición porque las solicitudes se atienden en orden de llegada según el timestamp. Todos los procesos reciben su turno, ya que los REPLY siempre se envían una vez que la SC ha sido liberada.
 
-* **Características:**
-	* Cada proceso conoce el PID de los demás procesos, sabe cuales son mayores
-	* Interacción síncrona gestionada por timeouts
-	* Red sin fallos
-	* Inicia elección si el líder no responde
-	* Procesos con mayor PID intimidan a los de menor para expulsarlos de la elección quedando al final un único proceso.
-	* Cuando un proceso fallido re-arranca, inicia una elección automáticamente
+![[Pasted image 20250112161648.png]]
 
-* **Algoritmo:**
-	* 4 tipos de msg:
-		* Elección: anuncia elección
-		* Respuesta: respuesta a elección
-		* Coordinador: anuncia líder elegido
-		* Latido: msg que se envía al coordinador, si contesta está vivo
-	* Proceso empieza elección cuando:
-		* ha expirado el timeout, es decir, el coordinador no responde
-		* recibe Elección
-			* Contesta si tiene el PID mayor (que lo tendrá, mas bien sería si sigue vivo) y vuelve a lanzar Elección a todos los procesos mayores.
-			* Si ya estaba en elección contesta si procede pero no vuelve a lanzar Elección.
-	* Proceso empieza elección
-		* Envía Elección a todos los procesos con PID mas alto
-		* Si no se recibe Respuesta se convierte en líder y manda el msg Coordinador a todos los procesos vivos
-		* Si llega Respuesta, entonces espera Coordinador durante un tiempo (timeout)
-		* Si no llega el msg Coordinador entonces reinicia la Elección
-		* Si un proceso sabe que su PID es el mas alto entonces puede responder inmediatamente con Coordinador
-		* Se deben ajustar los tiempos de expiración
-			* `(2*RTT + Tprocesado)`
-		* Si hay error durante la detección de fallo, la elección seguirá adelante.
-![[Pasted image 20250111165642.png]]
-![[Pasted image 20250111165709.png]]
-
-- **RTT** significa **Round-Trip Time** o tiempo de ida y vuelta. Es el tiempo que tarda un mensaje en viajar desde un emisor hasta un receptor y que la respuesta de ese receptor vuelva al emisor.
-
-- **Mejor caso (1 RTT, N-1 mensajes)**:
-    - Ocurre cuando el proceso con **mayor PID detecta directamente la falla** del líder.
-    - Este proceso se autoproclama líder y envía un único mensaje de **Coordinador** a los demás procesos.
-- **Peor caso (N-1 RTTs, O(N²) mensajes)**:
-    - Sucede si el proceso con **menor PID inicia la elección**.
-    - Este proceso debe enviar mensajes de **Elección** a procesos con mayor PID, quienes a su vez continúan propagando la elección hasta llegar al proceso con el mayor PID. Luego, este último envía mensajes de **Coordinador** a todos los demás
-
-![[Pasted image 20250111175052.png]]
-
-- **Timeout para detectar la falla del líder**:
-    - Cada proceso monitorea al líder actual enviándole mensajes periódicos de "latido" (heartbeat) y espera su respuesta.
-    - Si el proceso no recibe respuesta dentro de un tiempo definido, el timeout expira y el proceso asume que el líder ha fallado, iniciando una elección.
-- **Timeout para esperar respuestas durante la elección**:
-    - Cuando un proceso inicia una elección, envía mensajes de Elección a los procesos con mayor PID y espera respuestas (mensajes de Respuesta o Coordinador).
-    - Si no recibe ninguna respuesta dentro del tiempo definido, el proceso asume que los procesos con mayor PID han fallado y se declara líder enviando un mensaje de Coordinador a todos los procesos vivos.
-- Se ajustan con `2*RTT + Tprocesado`
+### Algoritmo de Lamport
+* Conocer todos los procesos
+* Relojes lógicos
+* Se asume que no hay fallos en la red que los mensajes llegan
+![[Pasted image 20250112175849.png]]
+* Heap = Montículo con tiempo
+![[Pasted image 20250112180735.png]]
+* Desempate por PID
 
 ### Kubernetes
-
+Kubernetes utiliza **etcd**, un almacén de datos distribuido tolerante a fallos, para almacenar la configuración del clúster.
+Características de etcd:
+1. **Tolerancia a fallos:**
+    - Al ser un sistema distribuido basado en el algoritmo de consenso **Raft**, puede manejar la pérdida de nodos mientras mantenga un quórum de nodos disponibles.
+2. **Consistencia secuencial:**
+    - etcd garantiza una **consistencia secuencial fuerte**, lo que significa que las operaciones de lectura y escritura siempre reflejan el orden en que se realizaron las operaciones.
+3. **Uso en Kubernetes:**
+    - Toda la configuración del clúster de Kubernetes, como los recursos (Pods, Deployments, Services, etc.), se almacena en **etcd**.
+    - Kubernetes consulta y actualiza etcd para coordinar las operaciones dentro del clúster.
+En resumen, etcd cumple exactamente con lo que se describe en el enunciado: es un almacén de datos tolerante a fallos que proporciona consistencia secuencial frente a fallos, siendo un componente esencial en Kubernetes.
+* Un **DNS (Domain Name System)** es un sistema que traduce nombres de dominio legibles para los humanos, como `www.google.com`, en direcciones IP, como `142.250.190.78`, que las computadoras utilizan para comunicarse entre sí en una red, como Internet.
 * **Pod**
 	* Unidad de ejecución
 		* Ejecuta una instancia de una aplicación
@@ -201,6 +253,19 @@ Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo 
 		- **StatefulSet**
 			- Diseñado específicamente para gestionar aplicaciones **con estado**. A diferencia de los **Deployments** o **ReplicaSets**, que son ideales para aplicaciones **sin estado**, el **StatefulSet** se encarga de asegurar que los Pods mantengan una identidad única y persistente a lo largo del tiempo.
 			- ![[Pasted image 20250111211258.png]]
+			1. **Nombres DNS estables**:
+			    - Cada réplica de un pod gestionado por un StatefulSet tiene un nombre único y estable en el formato `<nombre-pod>-<índice>`, por ejemplo, `miapp-0`, `miapp-1`.
+			    - Estos nombres se resuelven a través del DNS del clúster y permanecen constantes, facilitando la identificación de cada réplica.
+			2. **Orden en la creación y eliminación**:
+			    - Los pods se crean, eliminan o escalan en un **orden controlado** (uno por uno y en secuencia).
+			    - Esto garantiza que cada réplica se despliegue o detenga de manera predecible, evitando conflictos en sistemas distribuidos con dependencias.
+			3. **Persistencia de datos**:
+			    - Utiliza **PersistentVolumeClaims (PVCs)** para asociar almacenamiento persistente a cada réplica. Esto significa que, aunque un pod se reinicie o migre a otro nodo, los datos asociados permanecerán intactos.
+			4. **Garantía de unicidad**:
+			    - Cada pod tiene una identidad única (nombre, almacenamiento, configuración) que no es compartida con las demás réplicas.
+			5. **Soporte para aplicaciones con estado**:
+			    - Es ideal para aplicaciones como bases de datos, sistemas de mensajería o aplicaciones distribuidas donde cada instancia necesita conservar su estado o tener un rol específico en el sistema.
+
 		- **Services (No es un tipo de controlador pero trabaja con ellos)** 
 			- ![[Pasted image 20250111211050.png]]
 			- ![[Pasted image 20250111211101.png]]
@@ -253,7 +318,16 @@ Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo 
 		- ![[Pasted image 20250112012546.png]]
 
 ### Protocolo SSL/TLS
-
+* El protocolo **SSL/TLS (Secure Sockets Layer/Transport Layer Security)** garantiza la seguridad de las comunicaciones en redes como Internet al proporcionar confidencialidad, integridad y autenticación. Utiliza cifrado para proteger los datos, certificados digitales para autenticar servidores y, opcionalmente, clientes, y un proceso de "handshake" para negociar claves de cifrado y algoritmos seguros. Es ampliamente utilizado en **HTTPS**, correos electrónicos y VPNs para proteger datos sensibles mediante cifrado y evitar manipulaciones o interceptaciones durante la transmisión.
+ * ![[Pasted image 20250110180945.png]]
+ * **Transport Layer Security**
+	 * **TLS (Transport Layer Security)** es un protocolo criptográfico diseñado para proporcionar **seguridad** en las comunicaciones a través de redes, como Internet. Es el sucesor de **SSL (Secure Sockets Layer)** y mejora sus características para garantizar **confidencialidad**, **integridad** y **autenticación** en las conexiones.
+	 * ![[Pasted image 20250110182104.png]]
+	 * ![[Pasted image 20250110182148.png]]
+	 * ![[Pasted image 20250110182212.png]]
+		 * Autenticación del servidor (y opcionalmente del cliente).
+		- Generación de claves compartidas.
+		- Configuración de cifrado e integridad para el resto de la sesión
 ### Kerberos
 
 **Definición:** Kerberos es un protocolo de autenticación diseñado para sistemas distribuidos que permite a usuarios y servicios autenticarse de manera segura en una red, minimizando riesgos de ataques como la interceptación de contraseñas o la reinyección de datos (replay attacks).
@@ -314,6 +388,42 @@ Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo 
 3. **Cifrado simétrico:**
     - Aunque es eficiente, implica compartir claves secretas, lo cual puede ser un riesgo si no se protege adecuadamente.
 
+### Transacciones distribuidas
+![[imagen.png]]
+
+Una transacción distribuida implica operaciones que afectan múltiples nodos o sistemas distribuidos. Su objetivo es asegurar que todas las operaciones involucradas se ejecuten correctamente como un todo (sean "atómicas"), a pesar de posibles fallos.
+
+En sistemas distribuidos, estas transacciones requieren **protocolos de consenso y coordinación**, como el protocolo de **commit en dos fases (2PC)** o el **protocolo de commit en tres fases (3PC)**. Estos garantizan que todos los nodos estén de acuerdo en confirmar o abortar una transacción.
+
+**Características clave**
+1. **Atomización de las operaciones**: Todas las operaciones en la transacción se completan o ninguna lo hace.
+2. **Gestión de fallos**: Se asegura que en caso de fallo, los datos permanezcan consistentes y no se rompa la lógica del sistema.
+3. **Coordination Manager**: Un coordinador centralizado o distribuido que asegura el estado final de la transacción.
+
+**Propiedades ACID**
+Las transacciones distribuidas buscan cumplir con las propiedades ACID, que son fundamentales para garantizar la integridad de los datos:
+1. **Atomicidad (Atomicity)**
+    - Una transacción es "todo o nada". Si una parte de la transacción falla, toda la transacción se aborta, y los cambios realizados hasta ese momento se deshacen.
+    - Ejemplo: Si un cliente transfiere dinero entre cuentas en dos bancos, ambas cuentas deben actualizarse correctamente o ninguna.
+2. **Consistencia (Consistency)**
+    - Después de una transacción, el sistema debe estar en un estado consistente, respetando todas las reglas de integridad y restricciones.
+    - Ejemplo: Si un usuario intenta gastar más dinero del que tiene, la transacción debe fallar para mantener la consistencia.
+3. **Aislamiento (Isolation)**
+    - Las transacciones concurrentes no deben interferir entre sí. Los cambios realizados por una transacción no serán visibles para otras hasta que se confirmen.
+    - Ejemplo: Dos usuarios no deben poder comprar el último producto en inventario al mismo tiempo.
+4. **Durabilidad (Durability)**
+    - Una vez que una transacción se ha confirmado, sus efectos persisten incluso ante fallos del sistema.
+    - Ejemplo: Si el sistema falla después de confirmar un pago, los registros de la transacción deben seguir estando disponibles.
+
+**Protocolo de Commit**
+1. **Dos Fases (2PC)**:
+    - **Fase 1 (Preparación)**: El coordinador solicita a los nodos que preparen la transacción y le envíen una respuesta (ok/abort).
+    - **Fase 2 (Commit/Abort)**: Si todos los nodos responden "ok", el coordinador confirma la transacción. Si alguno falla, se aborta.
+2. **Tres Fases (3PC)**:
+    - Similar a 2PC pero incluye una fase adicional de "Pre-Commit" para evitar bloqueos en caso de fallos.
+
+**Resumen**
+Las transacciones distribuidas son esenciales para mantener la consistencia y confiabilidad en sistemas que operan en múltiples nodos. Cumplen con las propiedades ACID para garantizar la integridad de los datos, incluso ante fallos. Proporcionan un equilibrio entre rendimiento, tolerancia a fallos y consistencia, siendo utilizadas en bases de datos distribuidas, sistemas financieros, y más.
 ### Consistencia
 
 * **Replicación como técnica de escalabilidad**
@@ -330,3 +440,58 @@ Esto sin tener en cuenta el aumento de reloj en eventos internos. Es decir solo 
 		* **Consistencia eventual
 			* ![[Pasted image 20250109224401.png]]
 		* ![[Pasted image 20250112015857.png]]
+
+Con estado:
+CAP
+Asimétrico Simétrico
+Propiedades de un consenso...
+Propiedades RAFT
+
+Sin estado:
+Redundancia temporal: reintentar
+Redundancia física: replicar
+
+### Raft
+* **Mayoría**
+	* ![[Pasted image 20250112185600.png]]
+	* Redondeo hacia abajo mas uno
+
+ 
+### Golang
+
+```` go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func sendHeartbeats(heartbeatChan chan<- string, timeout time.Duration) {
+	for {
+		time.Sleep(1 * time.Second) // Envía un latido cada segundo
+		heartbeatChan <- "latido"
+		fmt.Println("Latido enviado")
+	}
+}
+
+func monitorHeartbeats(heartbeatChan <-chan string, timeout time.Duration) {
+	for {
+		select {
+		case hb := <-heartbeatChan:
+			fmt.Println("Latido recibido:", hb)
+		case <-time.After(timeout):
+			fmt.Println("Timeout: No se recibió un latido a tiempo")
+			return
+		}
+	}
+}
+
+func main() {
+	heartbeatChan := make(chan string)
+	timeout := 3 * time.Second // Tiempo límite para recibir un latido
+
+	go sendHeartbeats(heartbeatChan, timeout)
+	monitorHeartbeats(heartbeatChan, timeout)
+}
+```
