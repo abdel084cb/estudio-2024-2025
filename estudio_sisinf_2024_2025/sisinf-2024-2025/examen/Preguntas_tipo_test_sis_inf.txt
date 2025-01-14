@@ -1,0 +1,779 @@
+### Examen Tipo Test sobre Sistemas de Información
+
+Preguntas Tipo Test - Tema 1: Introducción
+
+1. ¿Qué es un sistema de información?
+ - a) Un conjunto de datos desorganizados.
+ - b) Un conjunto de elementos interrelacionados que procesan, almacenan y diseminan
+información.
+ - c) Un sistema que utiliza solo hardware para procesar datos.
+ - d) Un proceso manual para gestionar información.
+2. ¿Cuáles son los componentes esenciales de cualquier sistema?
+ - a) Entradas, mecanismos de procesamiento, salidas y retroalimentación.
+ - b) Hardware y software.
+ - c) Datos e información.
+ - d) Personas y procedimientos.
+3. ¿Qué se entiende por "efectividad" en un sistema de información?
+ - a) Minimizar costos.
+ - b) Optimizar el tiempo de respuesta.
+ - c) Alcanzar los objetivos propuestos.
+ - d) Reducir errores humanos.
+4. La "infobesidad" se refiere a:
+ - a) La falta de acceso a datos relevantes.
+ - b) El consumo excesivo e innecesario de información.
+ - c) La sobrecarga de sistemas por exceso de datos.
+ - d) La pérdida de datos en grandes sistemas.
+5. ¿Qué mide la eficiencia de un sistema?
+ - a) La capacidad de integrar datos de múltiples fuentes.
+ - b) El grado en que se alcanzan los objetivos.
+ - c) El beneficio en relación con los recursos consumidos.
+ - d) La cantidad de datos procesados por segundo.
+6. ¿Qué es la "provenance" en el contexto de datos?
+ - a) La capacidad de un sistema para almacenar información de manera eficiente.
+ - b) La trazabilidad de los datos procesados.
+ - c) El origen de los datos.
+ - d) El proceso de consolidación de datos.
+7. ¿Qué elemento NO pertenece a los componentes de un sistema de información?
+ - a) Hardware.
+ - b) Software.
+ - c) Datos.
+ - d) Análisis financiero.
+8. Un algoritmo es:
+ - a) Un conjunto de datos ordenados.
+ - b) Una lista de pasos o instrucciones para resolver una tarea.
+ - c) Un mecanismo para procesar entradas en un sistema de información.
+ - d) Una técnica para minimizar errores en bases de datos.
+9. ¿Qué significa "retroalimentación" en un sistema?
+ - a) Reutilización de recursos.
+ - b) Modificación de entradas en función de los resultados obtenidos.
+ - c) Almacenamiento de información histórica.
+ - d) Un proceso de optimización de hardware.
+10. ¿Qué es el "conocimiento" en el contexto de sistemas de información?
+ - a) Un conjunto de datos crudos procesados.
+ - b) Una colección de hechos adquirida por aprendizaje o experiencia.
+ - c) Un sistema automático de decisiones.
+ - d) Información desorganizada para análisis.
+
+Preguntas Tipo Test - Tema 2: Evolución de la Web
+
+1. ¿Qué caracteriza a la Web 1.0?
+ - a) Interactividad avanzada entre usuarios y sitios web.
+ - b) Uso exclusivo de recursos gráficos.
+ - c) Comunicación unidireccional y contenido estático.
+ - d) Integración de agentes inteligentes.
+2. La Web 3.0 se basa en:
+ - a) Uso de bases de datos distribuidas.
+ - b) Principios de anotación, ontologías y razonadores.
+ - c) Almacenamiento masivo de datos.
+ - d) Redes sociales.
+3. ¿Cuál es una aplicación que demostró la viabilidad de la Web Semántica?
+ - a) DBpedia.
+ - b) Google Scholar.
+ - c) Yahoo.
+ - d) Wikipedia.
+4. La Web 2.0 se diferencia de la Web 1.0 en:
+ - a) Permitir la participación activa de los usuarios.
+ - b) El uso exclusivo de contenido multimedia.
+ - c) La capacidad de almacenar grandes volúmenes de datos.
+ - d) Integrar buscadores más eficientes.
+5. En la Web 4.0, una característica importante es:
+ - a) La generación dinámica de documentos HTML.
+ - b) La geolocalización de la información.
+ - c) El uso de servidores dedicados.
+ - d) La construcción manual de índices.
+6. Una diferencia clave entre una URL y una URI es que:
+ - a) Todas las URI son URL.
+ - b) Todas las URL son URI.
+ - c) Una URL solo identifica recursos físicos.
+ - d) Una URI siempre especifica un protocolo.
+7. ¿Qué define el término "Web Semántica"?
+ - a) Una web basada únicamente en texto.
+ - b) Una web con metadatos que facilitan la interacción entre humanos y máquinas.
+ - c) Una red social avanzada.
+ - d) Una web sin contenido dinámico.
+8. El protocolo HTTP es:
+ - a) Un protocolo de transferencia sin estado.
+ - b) Un protocolo para redes locales únicamente.
+ - c) Exclusivo para la Web 3.0.
+ - d) Dependiente del hardware del cliente.
+9. La anotación en la Web Semántica se refiere a:
+ - a) La inclusión de metadatos en recursos web.
+ - b) La clasificación manual de páginas web.
+ - c) El diseño visual de sitios web.
+ - d) La eliminación de datos irrelevantes.
+10. Una característica fundamental de la Web 2.0 es:
+ - a) La creación de contenido por parte de los usuarios.
+ - b) El almacenamiento de grandes volúmenes de datos.
+ - c) El uso de ontologías para categorizar información.
+ - d) La generación dinámica de contenido únicamente en el servidor.
+
+11. ¿Qué característica principal define a la Web 1.0?
+a) Creación de contenido exclusivamente por usuarios.
+b) Contenido estático con comunicación unidireccional.
+c) Uso de ontologías para organizar información.
+d) Uso de cookies para rastreo.
+
+12. ¿Qué diferencia clave existe entre la Web 1.5 y la Web 1.0?
+a) La Web 1.5 permite generación dinámica de contenido.
+b) La Web 1.5 utiliza exclusivamente servidores dedicados.
+c) La Web 1.0 es más rápida que la Web 1.5.
+d) No existen diferencias significativas.
+
+13. Una característica fundamental de la Web 2.0 es:
+a) Comunicación unidireccional.
+b) Creación de contenido por parte de los usuarios.
+c) Solo lectura de documentos.
+d) Generación de contenido exclusivamente por empresas.
+
+14. ¿Qué característica define la Web 3.0?
+a) Uso de tecnologías semánticas como RDF y SPARQL.
+b) Comunicación unidireccional y contenido estático.
+c) Generación dinámica de contenido desde servidores.
+d) Exclusivo uso de bases de datos distribuidas.
+
+15. ¿Qué ventaja aporta la Web 2.0 frente a la Web 1.5?
+a) La capacidad de interpretar ontologías.
+b) La participación activa de los usuarios en la generación de contenido.
+c) La integración de tecnologías semánticas.
+d) La organización de información en hipervínculos estáticos.
+
+16. La Web 1.5 introdujo la capacidad de:
+a) Generar contenido dinámico en respuesta a consultas.
+b) Interpretar metadatos semánticos.
+c) Conectar directamente bases de datos distribuidas.
+d) Generar contenido exclusivamente en texto plano.
+
+17. En la Web 2.0, ¿qué herramienta es común para la generación de contenido por usuarios?
+a) Wikis.
+b) RDF.
+c) Bases de datos relacionales.
+d) SPARQL.
+
+18. Una característica clave de la Web 3.0 es:
+a) Comunicación exclusivamente en tiempo real.
+b) Uso de razonadores y ontologías.
+c) Contenido generado dinámicamente en servidores.
+d) Exclusividad de texto estático.
+
+19. ¿Cuál es un ejemplo típico de una aplicación de la Web 2.0?
+a) Wikipedia.
+b) Documentos HTML estáticos.
+c) SPARQL Endpoint.
+d) Archivos alojados en FTP.
+
+20. En la evolución de la Web, ¿cuál de las siguientes tecnologías pertenece a la Web 3.0?
+a) RDF y OWL.
+b) Bases de datos relacionales simples.
+c) Formularios HTML.
+d) Protocolos de red básicos como TCP.
+
+Preguntas Tipo Test - Tema: Recuperación de Información
+
+1. ¿Qué objetivo tiene un sistema de recuperación de información?
+a) Almacenar grandes volúmenes de datos de forma segura.
+b) Extraer y listar documentos relevantes para una consulta.
+c) Crear bases de datos relacionales.
+d) Generar metadatos para datos no estructurados.
+
+2. Una consulta en un sistema de recuperación de información se representa mediante:
+a) Una lista de documentos relevantes.
+b) Un formalismo lógico o un vector.
+c) Un conjunto de palabras clave desordenadas.
+d) Un conjunto de enlaces.
+
+3. El modelo vectorial mide la similitud entre una consulta y un documento usando:
+a) El producto cruzado de vectores.
+b) El coseno del ángulo entre vectores.
+c) La suma de las frecuencias de términos.
+d) La distancia euclidiana entre vectores.
+
+4. El éxito de un sistema de recuperación de información se mide mediante:
+a) La cantidad de documentos recuperados.
+b) La capacidad de almacenamiento del sistema.
+c) Métricas como precision y recall.
+d) El tiempo de respuesta del sistema.
+
+5. En un sistema de recuperación, el "recall" mide:
+a) La cantidad de documentos relevantes recuperados respecto a los existentes.
+b) La cantidad de documentos recuperados independientemente de su relevancia.
+c) El porcentaje de errores en la recuperación.
+d) La cantidad de consultas respondidas correctamente.
+
+6. El modelo booleano en recuperación de información se basa en:
+a) La similitud entre consultas y documentos.
+b) La representación de documentos mediante conjuntos de bits.
+c) El uso de algoritmos de clasificación supervisada.
+d) La estructura semántica del lenguaje natural.
+
+7. Una ventaja del modelo vectorial frente al modelo booleano es:
+a) Mayor velocidad de recuperación.
+b) Permite realizar un ranking de documentos.
+c) Evita la dependencia del vocabulario del corpus.
+d) Genera más documentos relevantes.
+
+8. En la Web, ¿qué técnica se usa para localizar documentos relevantes?
+a) Crawlers automáticos.
+b) Bases de datos relacionales.
+c) Anotaciones manuales.
+d) Conjuntos de datos estructurados.
+
+9. Un "código de estado 4xx" en HTTP indica:
+a) Error del cliente al realizar una petición.
+b) Error del servidor en la respuesta.
+c) Información adicional para el cliente.
+d) Éxito en la petición.
+
+10. ¿Qué representa un índice invertido en un motor de búsqueda?
+a) Un listado de documentos organizados por fecha.
+b) Un mapeo de términos a los documentos donde aparecen.
+c) Una tabla de frecuencias de palabras clave.
+d) Una jerarquía de documentos por relevancia.
+
+11. En un sistema de recuperación de información, el "precision" mide:
+a) La cantidad de documentos relevantes recuperados respecto al total recuperado.
+b) El número total de documentos relevantes en el corpus.
+c) La velocidad de recuperación del sistema.
+d) La exactitud de los datos almacenados.
+
+12. El modelo probabilístico en recuperación de información utiliza:
+a) Redes neuronales para evaluar consultas.
+b) Probabilidades condicionadas basadas en el teorema de Bayes.
+c) Clustering para agrupar documentos similares.
+d) Ontologías para categorizar datos.
+
+13. En un motor de búsqueda, los meta-buscadores se caracterizan por:
+a) Crear índices invertidos propios.
+b) Buscar en varios buscadores y combinar resultados.
+c) Utilizar solo bases de datos locales.
+d) Indexar exclusivamente documentos multimedia.
+
+14. Una desventaja del modelo booleano en recuperación de información es:
+a) Recupera muy pocos o demasiados documentos.
+b) Requiere procesamiento computacional intensivo.
+c) Depende exclusivamente de metadatos.
+d) No permite indexar documentos complejos.
+
+15. El modelo HITS en recuperación de información se basa en:
+a) Algoritmos de clustering supervisado.
+b) La estructura de enlaces entre documentos.
+c) Redes neuronales para procesar consultas.
+d) La frecuencia de términos en el corpus.
+
+16. Una diferencia clave entre precision y recall es:
+a) Precision mide la relevancia de los documentos recuperados, mientras que recall mide la exhaustividad.
+b) Recall mide la velocidad del sistema y precision la exactitud.
+c) Precision evalúa todos los documentos del corpus, mientras que recall solo los indexados.
+d) No hay diferencias significativas.
+
+17. En un sistema de recuperación basado en clustering, los documentos se agrupan según:
+a) Su ubicación física en el almacenamiento.
+b) La similitud en su contenido.
+c) La frecuencia de acceso por parte de los usuarios.
+d) El orden en que fueron indexados.
+
+18. El PageRank es un algoritmo que mide:
+a) La frecuencia de palabras clave en un documento.
+b) La relevancia de una página basada en enlaces entrantes.
+c) La velocidad de respuesta de un motor de búsqueda.
+d) El número total de documentos indexados.
+
+19. La "deep web" se refiere a:
+a) Documentos accesibles solo desde navegadores específicos.
+b) Contenidos que no están indexados por motores de búsqueda convencionales.
+c) Archivos multimedia alojados en servidores remotos.
+d) Bases de datos distribuidas en la red.
+
+20. Un sistema de recuperación de información eficiente debe:
+a) Maximizar precision y recall.
+b) Minimizar el uso de índices invertidos.
+c) Recuperar todos los documentos del corpus.
+d) Procesar consultas solo en lenguaje natural.
+
+Preguntas Tipo Test - Tema: Bases de Datos Distribuidas
+
+1. ¿Qué es una base de datos distribuida?
+a) Una base de datos centralizada en un único nodo.
+b) Una colección de bases de datos interrelacionadas distribuidas en una red.
+c) Un sistema de bases de datos en memoria.
+d) Un modelo exclusivo de bases de datos relacionales.
+
+2. ¿Qué NO es una base de datos distribuida?
+a) Bases de datos que residen en un único nodo accesible por red.
+b) Bases de datos federadas.
+c) Sistemas de bases de datos centralizadas.
+d) Sistemas con un esquema global y múltiples nodos.
+
+3. ¿Qué caracteriza al diseño top-down en bases de datos distribuidas?
+a) Se diseña un esquema global y luego se fragmenta.
+b) Se integran bases de datos locales preexistentes.
+c) Depende exclusivamente de esquemas relacionales.
+d) Utiliza únicamente bases de datos paralelas.
+
+4. ¿Qué tipo de fragmentación consiste en dividir por filas los datos de una tabla?
+a) Fragmentación horizontal.
+b) Fragmentación vertical.
+c) Fragmentación híbrida.
+d) Fragmentación disjunta.
+
+5. Una característica clave de las bases de datos federadas es:
+a) Proporcionan un esquema global obtenido de esquemas locales.
+b) Utilizan exclusivamente bases de datos distribuidas.
+c) No permiten redundancia de datos.
+d) Requieren replicación completa.
+
+6. En bases de datos distribuidas, la replicación completa implica:
+a) Que todos los nodos contengan todos los fragmentos de datos.
+b) Que cada fragmento resida en un nodo único.
+c) Que no exista redundancia entre nodos.
+d) Uso exclusivo de bases de datos paralelas.
+
+7. ¿Qué técnica permite reconstruir una tabla original a partir de fragmentos?
+a) JOIN y UNION.
+b) SELECT y INSERT.
+c) CREATE y DROP.
+d) RENAME y TRUNCATE.
+
+8. Una desventaja de la replicación completa en bases de datos distribuidas es:
+a) Complejidad en las consultas.
+b) Actualizaciones difíciles de manejar.
+c) Baja disponibilidad de los datos.
+d) Necesidad de fragmentación horizontal.
+
+9. ¿Qué ventaja tiene la replicación parcial en bases de datos distribuidas?
+a) Combina facilidad de actualizaciones y consultas eficientes.
+b) Evita por completo la redundancia de datos.
+c) Permite únicamente consultas en nodos específicos.
+d) Asegura que los datos estén siempre sincronizados.
+
+10. ¿Qué se utiliza en el diseño de bases de datos federadas?
+a) Un modelo canónico para integrar esquemas locales.
+b) Exclusivamente bases de datos relacionales.
+c) Bases de datos no estructuradas.
+d) Un único esquema físico para todos los nodos.
+
+11. En bases de datos distribuidas, una fragmentación válida debe ser:
+a) Completa, reconstruible y con intersección vacía.
+b) Horizontal y vertical.
+c) Global y redundante.
+d) Automática y uniforme.
+
+12. ¿Qué se entiende por diseño bottom-up en bases de datos federadas?
+a) Integrar esquemas locales preexistentes en un esquema global.
+b) Fragmentar un esquema global para crear esquemas locales.
+c) Diseñar bases de datos desde cero.
+d) Utilizar bases de datos en memoria exclusivamente.
+
+13. ¿Qué es una base de datos interoperante?
+a) Una base de datos centralizada con acceso distribuido.
+b) Un sistema que no proporciona un esquema global.
+c) Un conjunto de bases de datos paralelas interconectadas.
+d) Un sistema que solo utiliza lenguajes de acceso locales.
+
+14. Una base de datos distribuida es diferente de una base de datos paralela porque:
+a) La paralela utiliza múltiples procesadores en un único nodo.
+b) La distribuida no utiliza fragmentación.
+c) Ambas son idénticas.
+d) La paralela no utiliza replicación.
+
+15. ¿Qué tipo de bases de datos NO pertenece al ámbito distribuido?
+a) Bases de datos en la nube.
+b) Bases de datos paralelas.
+c) Bases de datos federadas.
+d) Bases de datos fragmentadas horizontalmente.
+
+16. Una ventaja clave de las bases de datos distribuidas es:
+a) Reducción de redundancia total.
+b) Mayor disponibilidad y tolerancia a fallos.
+c) Eliminación de la necesidad de replicación.
+d) Dependencia exclusiva de nodos centrales.
+
+17. ¿Qué se utiliza para traducir esquemas locales a un modelo canónico en bases federadas?
+a) Algoritmos de traducción de metadatos.
+b) Herramientas de integración de datos.
+c) Modelos E/R extendidos.
+d) Redes neuronales.
+
+18. ¿Qué caracteriza a una base de datos distribuida con replicación parcial?
+a) Algunos fragmentos se replican en varios nodos.
+b) Ningún fragmento se replica.
+c) Todos los nodos contienen todos los datos.
+d) Cada nodo tiene datos únicos no redundantes.
+
+19. ¿Qué técnica mejora la consulta de datos distribuidos en bases de datos distribuidas?
+a) Índices locales y globales.
+b) Replicación completa de todos los fragmentos.
+c) Eliminación de redundancia de datos.
+d) Uso exclusivo de bases relacionales.
+
+20. En bases de datos federadas, ¿qué es la relación de enlace?
+a) La correspondencia entre elementos del esquema global y esquemas locales.
+b) La relación entre claves primarias y foráneas.
+c) La estructura jerárquica de las tablas.
+d) El modelo físico utilizado en los nodos locales.
+
+Preguntas Tipo Test - Tema: Almacenes de Datos
+
+1. ¿Qué es un almacén de datos?
+a) Un sistema para almacenar datos operacionales de una empresa.
+b) Un repositorio de datos estructurados para el análisis y toma de decisiones.
+c) Un conjunto de bases de datos no estructuradas.
+d) Un sistema utilizado para la transacción diaria de datos.
+
+2. Una de las principales características de los almacenes de datos es:
+a) La orientación a un aspecto específico o tema.
+b) La actualización constante de los datos operacionales.
+c) La eliminación de datos duplicados.
+d) La dependencia exclusiva de bases de datos relacionales.
+
+3. En un proceso ETL, la transformación implica:
+a) La extracción de datos desde fuentes operacionales.
+b) El procesamiento y depuración de datos para su integración.
+c) La carga de datos en bases transaccionales.
+d) La eliminación de datos no relevantes.
+
+4. ¿Cuál es una ventaja de un almacén de datos frente a los sistemas transaccionales?
+a) Permite el almacenamiento en tiempo real de datos.
+b) Facilita el análisis histórico y toma de decisiones.
+c) Minimiza el tiempo de respuesta de las transacciones.
+d) Evita la duplicación de datos en sistemas.
+
+5. Los procesos ETL son clave para:
+a) Mantener los datos operacionales actualizados.
+b) Transformar y cargar datos en un almacén de datos.
+c) Analizar datos en tiempo real.
+d) Sustituir los sistemas de bases de datos tradicionales.
+
+6. Un "slice" en un modelo multidimensional se refiere a:
+a) Un subconjunto de datos definido por seleccionar valores específicos de dimensiones.
+b) La eliminación de dimensiones irrelevantes en un cubo.
+c) La división de un almacén de datos en varios repositorios.
+d) La replicación parcial de datos en nodos.
+
+7. ¿Qué es un modelo en estrella en el contexto de almacenes de datos?
+a) Una representación jerárquica de datos.
+b) Una estructura con una tabla central conectada a tablas de dimensiones.
+c) Un esquema de bases de datos normalizado.
+d) Un método de replicación de datos.
+
+8. El "drill down" en un almacén de datos implica:
+a) Agregar resultados eliminando campos específicos.
+b) Detallar resultados aumentando el nivel de detalle de los datos.
+c) Consolidar datos redundantes en un cubo.
+d) Eliminar registros duplicados en un almacén.
+
+9. ¿Qué caracteriza a un Data Mart frente a un Data Warehouse?
+a) Es una versión más pequeña y específica de un Data Warehouse.
+b) Almacena todos los datos operacionales de una organización.
+c) No requiere procesos ETL para su construcción.
+d) Es utilizado exclusivamente por altos ejecutivos.
+
+10. El "staging area" en un proceso ETL se utiliza para:
+a) Almacenar temporalmente los datos antes de su transformación y carga.
+b) Indexar los datos una vez cargados en el almacén.
+c) Eliminar duplicados en el almacén de datos.
+d) Consolidar datos entre múltiples almacenes.
+
+11. ¿Qué ventaja aporta la carga incremental frente a la carga completa en un almacén de datos?
+a) Permite actualizar solo los datos nuevos o modificados.
+b) Minimiza la necesidad de procesos ETL.
+c) Elimina la necesidad de un staging area.
+d) Permite realizar análisis en tiempo real.
+
+12. Un cubo multidimensional físico se caracteriza por:
+a) Utilizar una matriz n-dimensional para almacenar datos.
+b) Ser una representación lógica de un almacén de datos.
+c) No estar relacionado con dimensiones.
+d) Usar exclusivamente bases de datos no estructuradas.
+
+13. El operador "roll up" en un cubo de datos se utiliza para:
+a) Detallar los datos al nivel más granular.
+b) Agregar los datos eliminando una o más dimensiones.
+c) Consolidar cubos de datos en una sola representación.
+d) Visualizar datos en tiempo real.
+
+14. ¿Qué caracteriza un Data Lake frente a un Data Warehouse?
+a) Almacena datos estructurados y no estructurados en bruto.
+b) Solo admite datos estructurados listos para el análisis.
+c) No requiere sistemas de integración de datos.
+d) Permite exclusivamente consultas transaccionales.
+
+15. La principal diferencia entre datos operacionales y datos de un almacén es:
+a) Los datos operacionales son para transacciones, los del almacén para análisis.
+b) Los datos operacionales son históricos, los del almacén en tiempo real.
+c) Los datos operacionales son no estructurados, los del almacén estructurados.
+d) No existe diferencia.
+
+16. En un proceso ETL, la carga por lotes implica:
+a) Actualizar los datos a intervalos regulares planificados.
+b) Realizar modificaciones en tiempo real.
+c) Consolidar cubos de datos en tiempo real.
+d) Transformar los datos de manera automática.
+
+17. Un almacén de datos NO se caracteriza por:
+a) Ser no volátil.
+b) Estar orientado a un tema específico.
+c) Mantener datos actualizados en tiempo real.
+d) Ser integrado.
+
+18. El esquema en estrella es preferido en almacenes de datos porque:
+a) Simplifica la consulta y navegación en los datos.
+b) Reduce al mínimo el almacenamiento de datos.
+c) Elimina redundancias en el almacén.
+d) Permite consultas en lenguaje natural.
+
+19. Una "carga completa" en un almacén de datos implica:
+a) Actualizar todos los datos existentes en el almacén.
+b) Reemplazar todos los datos del almacén por una nueva versión.
+c) Fusionar datos nuevos con los existentes.
+d) Mantener los datos históricos intactos.
+
+20. El objetivo principal de un almacén de datos es:
+a) Facilitar la toma de decisiones basada en datos históricos y actuales.
+b) Optimizar el tiempo de respuesta de las transacciones.
+c) Reemplazar sistemas de bases de datos relacionales.
+d) Almacenar datos no estructurados en bruto.
+
+Preguntas Tipo Test - Tema: Minería de Datos
+
+1. ¿Qué es la minería de datos?
+a) La recolección de datos en bruto desde diversas fuentes.
+b) El proceso de descubrir conocimiento interesante a partir de datos.
+c) El almacenamiento masivo de datos estructurados y no estructurados.
+d) La eliminación de datos redundantes en bases de datos.
+
+2. Un paso clave en la minería de datos es:
+a) Diseñar bases de datos relacionales.
+b) Seleccionar los datos a analizar.
+c) Reemplazar bases de datos existentes.
+d) Realizar transacciones en tiempo real.
+
+3. ¿Qué objetivo tiene la minería predictiva?
+a) Describir patrones existentes en los datos.
+b) Predecir valores futuros basados en datos actuales.
+c) Recolectar datos de fuentes externas.
+d) Clasificar los datos en categorías no relacionadas.
+
+4. La minería descriptiva busca:
+a) Identificar patrones y relaciones en los datos.
+b) Predecir valores futuros.
+c) Eliminar datos redundantes.
+d) Diseñar bases de datos operacionales.
+
+5. Un algoritmo común para la clasificación en minería de datos es:
+a) Clustering jerárquico.
+b) Árboles de decisión.
+c) Reglas de asociación.
+d) Análisis de componentes principales.
+
+6. La regresión lineal en minería de datos se utiliza para:
+a) Predecir un valor basado en una o más variables independientes.
+b) Agrupar datos similares en clústeres.
+c) Encontrar reglas de asociación entre datos.
+d) Normalizar los datos en un conjunto.
+
+7. En minería de patrones, el soporte mide:
+a) La cantidad de datos que no cumplen una regla.
+b) La probabilidad de que un conjunto de ítems ocurra en las transacciones.
+c) La frecuencia de actualización de los datos.
+d) El nivel de redundancia en un conjunto de datos.
+
+8. La confianza en una regla de asociación se refiere a:
+a) La probabilidad de que ocurra el consecuente dado que ocurre el antecedente.
+b) La frecuencia de actualización del conjunto de datos.
+c) La precisión del algoritmo utilizado.
+d) El porcentaje de datos irrelevantes eliminados.
+
+9. El agrupamiento (clustering) se utiliza para:
+a) Predecir valores específicos.
+b) Clasificar datos en categorías predefinidas.
+c) Agrupar datos similares sin categorías predefinidas.
+d) Diseñar bases de datos.
+
+10. Un método común para la reducción de dimensionalidad es:
+a) Clustering k-medias.
+b) Análisis de componentes principales (PCA).
+c) Reglas de asociación.
+d) Regresión logística.
+
+11. ¿Qué es un conjunto de entrenamiento en minería de datos?
+a) Un conjunto de datos utilizado para evaluar un modelo.
+b) Un subconjunto de datos empleado para entrenar un modelo.
+c) Un conjunto de datos irrelevantes para el análisis.
+d) Un conjunto de datos duplicados.
+
+12. ¿Qué mide la matriz de confusión?
+a) El nivel de redundancia en los datos.
+b) La cantidad de datos bien y mal clasificados.
+c) La frecuencia de actualización de un modelo.
+d) La relación entre datos estructurados y no estructurados.
+
+13. El F-measure combina:
+a) La precisión y el recall.
+b) El recall y la confianza.
+c) El soporte y la confianza.
+d) La precisión y la frecuencia.
+
+14. El análisis de sentimiento en minería de textos se utiliza para:
+a) Determinar la opinión o actitud expresada en un texto.
+b) Clasificar datos numéricos en un conjunto.
+c) Agrupar datos de texto en clústeres.
+d) Predecir valores futuros basados en datos históricos.
+
+15. Un caso de uso común para la minería de datos es:
+a) Detectar fraudes en transacciones financieras.
+b) Diseñar sistemas operacionales en tiempo real.
+c) Sustituir bases de datos distribuidas.
+d) Actualizar datos en sistemas transaccionales.
+
+16. La desambiguación en minería de textos implica:
+a) Eliminar datos duplicados en un conjunto.
+b) Determinar el significado correcto de una palabra en un contexto.
+c) Normalizar datos numéricos.
+d) Clasificar datos en categorías predefinidas.
+
+17. ¿Cuál es una técnica común para preprocesar datos textuales?
+a) Tokenización.
+b) Eliminación de duplicados.
+c) Creación de cubos multidimensionales
+d) Regresión logística.
+
+18. En minería de datos, el overfitting ocurre cuando:
+a) Un modelo generaliza bien en datos nuevos.
+b) Un modelo se ajusta demasiado a los datos de entrenamiento.
+c) Los datos de entrenamiento son insuficientes.
+d) Los datos de prueba no están balanceados.
+
+19. Una aplicación típica de la minería de datos es:
+a) Clasificar clientes para campañas de marketing.
+b) Crear bases de datos relacionales.
+c) Sustituir sistemas de transacciones distribuidas.
+d) Actualizar datos en sistemas operativos.
+
+20. ¿Qué es la evaluación cruzada en minería de datos?
+a) Un método para dividir los datos en conjuntos de entrenamiento y prueba.
+b) Una técnica para fusionar modelos diferentes.
+c) Un proceso para eliminar datos duplicados.
+d) Una estrategia para crear nuevas categorías de datos.
+
+Preguntas Tipo Test - Tema: Contexto Normativo
+
+1. ¿Qué derecho permite a un ciudadano acceder a los datos personales que una organización posee sobre él?
+a) Derecho de rectificación.
+b) Derecho de acceso.
+c) Derecho de oposición.
+d) Derecho de supresión.
+
+2. El derecho de supresión también es conocido como:
+a) Derecho al olvido.
+b) Derecho a la rectificación.
+c) Derecho de oposición.
+d) Derecho a la información.
+
+3. Una organización debe informar al ciudadano sobre los fines del tratamiento de sus datos personales debido al:
+a) Principio de limitación de almacenamiento.
+b) Principio de transparencia.
+c) Principio de exactitud.
+d) Principio de integridad y confidencialidad.
+
+4. El consentimiento para el tratamiento de datos personales debe ser:
+a) Implícito.
+b) Expreso, libre y específico.
+c) Dado por defecto.
+d) Informado de manera opcional.
+
+5. La protección de datos en la Unión Europea está regulada por:
+a) La Directiva 95/46/CE.
+b) El Reglamento General de Protección de Datos (RGPD).
+c) La Ley de Ciberseguridad Europea.
+d) La Directiva 2018/976/UE.
+
+6. ¿Qué derecho permite al ciudadano solicitar la corrección de datos incorrectos?
+a) Derecho de acceso.
+b) Derecho de supresión.
+c) Derecho de rectificación.
+d) Derecho de oposición.
+
+7. El principio de minimización de datos establece que:
+a) Solo deben recopilarse datos estrictamente necesarios para los fines declarados.
+b) Los datos deben ser accesibles solo para el personal autorizado.
+c) Los datos deben ser eliminados una vez cumplida su finalidad.
+d) Los datos deben mantenerse actualizados y correctos.
+
+8. El RGPD se aplica a:
+a) Organizaciones establecidas dentro de la Unión Europea.
+b) Organizaciones fuera de la UE que procesen datos de ciudadanos de la UE.
+c) Ambas opciones anteriores.
+d) Ninguna de las anteriores.
+
+9. El análisis de riesgos según MAGERIT incluye:
+a) Identificar activos y amenazas.
+b) Crear un plan de continuidad del negocio.
+c) Diseñar bases de datos distribuidas.
+d) Implementar modelos de clustering.
+
+10. Una salvaguarda en el contexto de MAGERIT es:
+a) Una medida para proteger activos contra amenazas.
+b) Un elemento secundario en un sistema de información.
+c) Un protocolo exclusivo de integridad de datos.
+d) Una metodología para crear sistemas transaccionales.
+
+11. El derecho de oposición permite a los ciudadanos:
+a) Solicitar la eliminación de todos sus datos personales.
+b) Evitar el tratamiento de sus datos en ciertas circunstancias.
+c) Acceder a la información almacenada sobre ellos.
+d) Corregir datos erróneos.
+
+12. El principio de exactitud establece que:
+a) Los datos personales deben mantenerse actualizados y precisos.
+b) Solo se deben procesar datos esenciales.
+c) Los datos deben almacenarse de manera indefinida.
+d) Los datos deben estar disponibles para los interesados en todo momento.
+
+13. La trazabilidad en el contexto normativo implica:
+a) El seguimiento de cómo se recopilan, almacenan y usan los datos.
+b) La eliminación de datos duplicados en bases de datos.
+c) La actualización automática de los datos personales.
+d) El almacenamiento de datos en ubicaciones distribuidas.
+
+14. ¿Cuál de los siguientes es un derecho del ciudadano según el RGPD?
+a) Derecho a la interoperabilidad.
+b) Derecho a la limitación del tratamiento.
+c) Derecho a la distribución de datos.
+d) Derecho al acceso remoto.
+
+15. El derecho a la portabilidad permite al ciudadano:
+a) Transferir sus datos personales de un responsable a otro.
+b) Solicitar la eliminación de sus datos.
+c) Rectificar sus datos en caso de errores.
+d) Limitar el tratamiento de sus datos.
+
+16. Una evaluación de impacto de protección de datos es necesaria cuando:
+a) El tratamiento de datos implica un alto riesgo para los derechos de las personas.
+b) Los datos son procesados en tiempo real.
+c) Se recopilan datos de fuentes externas.
+d) Se utiliza un sistema distribuido para procesar los datos.
+
+17. El MAGERIT considera esenciales como activos:
+a) Información y servicios.
+b) Bases de datos distribuidas.
+c) Equipos y redes.
+d) Protocolos de comunicación.
+
+18. El principio de limitación del almacenamiento implica:
+a) Que los datos personales solo deben conservarse el tiempo necesario para cumplir su finalidad.
+b) Que los datos deben estar accesibles en todo momento.
+c) Que los datos deben ser procesados rápidamente.
+d) Que los datos deben ser replicados en múltiples ubicaciones.
+
+19. La base jurídica para el tratamiento de datos personales incluye:
+a) Consentimiento del interesado.
+b) Ejecución de un contrato.
+c) Intereses vitales del interesado.
+d) Todas las anteriores.
+
+20. El principio de integridad y confidencialidad establece que:
+a) Los datos personales deben ser procesados de manera segura.
+b) Los datos deben mantenerse accesibles para los interesados.
+c) Los datos deben compartirse entre todas las partes interesadas.
+d) Los datos deben ser procesados únicamente en bases de datos distribuidas.
+

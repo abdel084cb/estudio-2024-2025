@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "f71123304e17c54f",
+        "id": "0e0ae34661280c34",
         "type": "tabs",
         "children": [
           {
-            "id": "5b07e7282d49a273",
+            "id": "65dcbfba19912dd2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "Sistemas legados.md",
-                "mode": "source",
-                "source": false
+                "file": "examen/wuolah-free-Apuntes_resumidos_Sistemas_de_la_Informacion.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Sistemas legados"
+              "icon": "lucide-file-text",
+              "title": "wuolah-free-Apuntes_resumidos_Sistemas_de_la_Informacion"
             }
           }
         ]
@@ -162,21 +160,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5b07e7282d49a273",
+  "active": "65dcbfba19912dd2",
   "lastOpenFiles": [
+    "examen/Formulitas.md",
+    "examen/wuolah-premium-Resumen-sistemas-de-informacion.pdf",
+    "fotos/Pasted image 20250114173521.png",
+    "fotos/Pasted image 20250114173507.png",
+    "fotos/Pasted image 20250114172150.png",
+    "fotos/Pasted image 20250114172016.png",
+    "fotos/Pasted image 20250114160507.png",
+    "fotos/Pasted image 20250114154215.png",
+    "examen/wuolah-free-Apuntes_resumidos_Sistemas_de_la_Informacion.pdf",
+    "Sistemas legados.md",
+    "examen/Preguntas_tipo_test_sis_inf.txt",
+    "examen",
     "fotos/Pasted image 20250101045335.png",
     "MAGERIT.md",
     "fotos/Pasted image 20250101052801.png",
     "fotos/Pasted image 20250101052831.png",
     "fotos/Pasted image 20250101052832.png",
-    "fotos/Pasted image 20250101052908.png",
-    "Pasted image 20250101053120.png",
-    "Pasted image 20250101053009.png",
-    "Sistemas legados.md",
     "Minería de datos y texto.md",
-    "fotos/Pasted image 20250101041646.png",
-    "fotos/Pasted image 20250101041029.png",
-    "fotos/Pasted image 20250101040657.png",
     "Almacenes de datos.md",
     "RDF y SPARQL.md",
     "Servlets y JSP.md",
@@ -186,7 +189,6 @@
     "HTML-CSS.md",
     "Evolución de la Web.md",
     "Information Retrieval.md",
-    "Untitled",
     "A tener en cuenta.md",
     "fotos"
   ]
