@@ -8,15 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "65dcbfba19912dd2",
+            "id": "685dff2eaca1cf4b",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "examen/wuolah-free-Apuntes_resumidos_Sistemas_de_la_Informacion.pdf"
+                "file": "examen/Formulitas.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-file-text",
-              "title": "wuolah-free-Apuntes_resumidos_Sistemas_de_la_Informacion"
+              "icon": "lucide-file",
+              "title": "Formulitas"
             }
           }
         ]
@@ -160,9 +162,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "65dcbfba19912dd2",
+  "active": "685dff2eaca1cf4b",
   "lastOpenFiles": [
+    "examen/preguntasCortasSisInf.pdf",
+    "examen/wuolah-free-Apuntes_resumidos_Sistemas_de_la_Informacion.pdf",
+    "examen/TestsSisInfSoluciones.pdf",
+    "examen/tests.pdf",
+    "examen/TestSisInf.pdf",
     "examen/Formulitas.md",
+    "examen/Resuelto.pdf",
+    "examen/Parcialmente_resuelto.pdf",
     "examen/wuolah-premium-Resumen-sistemas-de-informacion.pdf",
     "fotos/Pasted image 20250114173521.png",
     "fotos/Pasted image 20250114173507.png",
@@ -170,7 +179,6 @@
     "fotos/Pasted image 20250114172016.png",
     "fotos/Pasted image 20250114160507.png",
     "fotos/Pasted image 20250114154215.png",
-    "examen/wuolah-free-Apuntes_resumidos_Sistemas_de_la_Informacion.pdf",
     "Sistemas legados.md",
     "examen/Preguntas_tipo_test_sis_inf.txt",
     "examen",
@@ -189,7 +197,6 @@
     "HTML-CSS.md",
     "Evolución de la Web.md",
     "Information Retrieval.md",
-    "A tener en cuenta.md",
-    "fotos"
+    "A tener en cuenta.md"
   ]
 }
