@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "105ab06ed82cecfa",
+    "id": "0ea962c1f8991fcd",
     "type": "split",
     "children": [
       {
-        "id": "255e9e5143efb802",
+        "id": "dfa03e4d5e660eb2",
         "type": "tabs",
         "children": [
           {
-            "id": "27ef9d560b357a13",
+            "id": "c7c15f252982c3f1",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Patrones de diseño.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Patrones de diseño"
+              "title": "New tab"
             }
           }
         ]
@@ -27,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "df7f706f73a5bc7b",
+    "id": "54432011ad037f3c",
     "type": "split",
     "children": [
       {
-        "id": "77ed404bb3bc68af",
+        "id": "7eb51112f4fe8daf",
         "type": "tabs",
         "children": [
           {
-            "id": "af9b4db014c89aea",
+            "id": "9131cba7b7730948",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -47,7 +43,7 @@
             }
           },
           {
-            "id": "a8d5888dc916854f",
+            "id": "8f5042e37e26650c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -64,7 +60,7 @@
             }
           },
           {
-            "id": "c3caf75f793d55b6",
+            "id": "6a34616cf5cdcea1",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -80,20 +76,19 @@
     "width": 300
   },
   "right": {
-    "id": "5565bb0c43ba8f2e",
+    "id": "3c1666f0d5e927e3",
     "type": "split",
     "children": [
       {
-        "id": "68ac6b8d2beff945",
+        "id": "3e7936741fcefb88",
         "type": "tabs",
         "children": [
           {
-            "id": "dde70713544ea2ca",
+            "id": "211aa3e48ba1e356",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Análisis estática - fase de análisis - modelado de objetos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,25 +98,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Análisis estática - fase de análisis - modelado de objetos"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "e250bb799414bbb9",
+            "id": "66f7500ec455fa7c",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Análisis estática - fase de análisis - modelado de objetos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Análisis estática - fase de análisis - modelado de objetos"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "c4dc4234e76c7761",
+            "id": "064b77ca7c83436a",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -134,23 +128,21 @@
             }
           },
           {
-            "id": "7e59935d2c4d1f19",
+            "id": "d96c415c8df8f05d",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Patrones de diseño.md"
-              },
+              "state": {},
               "icon": "lucide-list",
-              "title": "Outline of Patrones de diseño"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,31 +154,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "27ef9d560b357a13",
+  "active": "c7c15f252982c3f1",
   "lastOpenFiles": [
-    "examen/examen.md",
-    "Patrones de diseño.md",
-    "fotos/Pasted image 20250117225156.png",
-    "fotos/Pasted image 20250117224437.png",
-    "Casos de uso.md",
-    "Diseño de Objetos.md",
-    "Fase de Requisitos.md",
-    "Pruebas del software.md",
-    "Análisis - Modelado estático - Modelado de objetos.md",
-    "Análisis - Modelado dinámico.md",
-    "fotos/Pasted image 20250117224227.png",
-    "fotos/IMG-20250117-WA0015.jpg",
-    "Diseño del Sistema.md",
-    "fotos/Pasted image 20250117153930.png",
-    "examen",
-    "fotos/Pasted image 20241227223003.png",
-    "fotos/Pasted image 20241225061906.png",
-    "fotos/Pasted image 20241225060635.png",
-    "fotos/Pasted image 20241225060612.png",
-    "fotos/Pasted image 20241225060515.png",
-    "2024-12-21.md",
-    "Untitled.canvas",
-    "fotos",
-    "Welcome.md"
+    "estudio_software_2024_2025/software-2024-2025/Apuntes 2 días antes del examen.md",
+    "estudio_software_2024_2025/software-2024-2025/Untitled.md"
   ]
 }

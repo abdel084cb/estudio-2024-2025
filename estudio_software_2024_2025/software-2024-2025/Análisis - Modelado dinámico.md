@@ -138,7 +138,7 @@ Ejemplo (control de semáforos en una intersección de 2 vías)
     - Se consideran inmediatas en el contexto del diagrama, aunque requieren algo de tiempo en la realidad.
 - **Asociaciones:**
     - **Transiciones:**
-        - Formato: `evento [guarda] / acción`
+        - Formato: `evento / acción o accion [guarda]`
             - **Evento:** Invocación a una operación de la clase (mensaje de entrada en un diagrama de secuencia).
             - **Guarda:** Expresión booleana basada en parámetros del evento y el contexto del objeto.
             - **Acción:** Invocación a una operación propia o de otra clase:

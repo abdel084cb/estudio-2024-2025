@@ -146,3 +146,5 @@ Dicho esto, tenemos el siguiente ejemplo
 Dicho esto, tenemos el siguiente ejemplo:
 
 ![[Pasted image 20241225061906.png]]
+![[IMG-20250117-WA0015.jpg]]
+Seguro es NO, en las que tiene que tocar

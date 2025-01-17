@@ -1,3 +1,4 @@
+![[Pasted image 20250117224437.png]]
 ![[Pasted image 20241224213849.png]]
 
 - Patrones estructurales
@@ -91,6 +92,7 @@ El **Patrón Bridge** es un patrón de diseño estructural que se utiliza para d
 	* El patrón Adapter está orientado a conseguir que componentes no relacionados trabajen juntos
 	*  Se aplica a sistemas que ya están diseñados (reingeniería)
 	* Un Bridge , por otro lado, se utiliza por adelantado en un diseño para permitir que las abstracciones y las implementaciones varíen independientemente
+![[Pasted image 20250117225156.png]]
 ![[Pasted image 20241224221033.png]]
 
 **Ejemplos:**
@@ -114,9 +116,11 @@ El **Patrón Façade** es un patrón de diseño estructural que proporciona una 
 1. El cliente solicita una operación al **Façade**.
 2. El **Façade** traduce esa solicitud y la delega a los componentes apropiados del subsistema.
 3. Los componentes del subsistema realizan las operaciones requeridas y devuelven el resultado al cliente a través del **Façade**.
+El **patrón Facade** (o Fachada) se utiliza para proporcionar una **interfaz simplificada y unificada** a un conjunto de interfaces más complejas en un subsistema. Este patrón ayuda a **reducir la complejidad** y facilita el uso del subsistema al ocultar sus detalles internos. Es especialmente útil para mejorar la experiencia del cliente cuando trabaja con sistemas grandes o complicados.
 ![[Pasted image 20241224222257.png]]
 
 **Ejemplos:**
+![[Pasted image 20250117224227.png]]
 ![[Pasted image 20241224222408.png]]
 #### Patrón Proxy
 El **Patrón Proxy** es un patrón de diseño estructural que proporciona un representante o sustituto de un objeto para controlar el acceso al mismo. Es decir, crea un intermediario que actúa como si fuera el objeto real, permitiendo añadir control, optimización o seguridad sin cambiar el objeto original.

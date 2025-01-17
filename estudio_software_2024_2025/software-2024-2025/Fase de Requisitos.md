@@ -5,7 +5,7 @@
 		* "El sistema debe permitir a los usuarios registrarse proporcionando su nombre, correo electrónico y contraseña."
 		* "El sistema debe permitir a los usuarios buscar productos por nombre, categoría o rango de precio."
 		* "El sistema debe enviar una notificación por correo electrónico cuando un usuario complete una compra."
-	* No funcionales: Dependientes de la implementación. "como"
+	* No funcionales: Dependientes de la implementación. "como" (seguridad, accesibilidad, como de bien de funcionar el sistema en ciertos casos (limites)...)
 		* "El sistema debe responder a las consultas de búsqueda en menos de 2 segundos."
 		* "El sistema debe estar disponible el 99.9% del tiempo, excepto durante el mantenimiento programado."
 		* "El sistema debe cifrar toda la información sensible utilizando el estándar AES-256."
